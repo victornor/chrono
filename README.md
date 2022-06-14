@@ -1,1 +1,1 @@
-# Chrono: C# CLI Timetracker for Developers
+# Chrono: C# CLI Timetracker
