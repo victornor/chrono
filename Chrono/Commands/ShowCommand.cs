@@ -1,6 +1,7 @@
 using Chrono.Commands.Options;
 using Chrono.Storage.Abstractions;
 using Microsoft.Extensions.Logging;
+using Spectre.Console;
 using Spectre.Console.Cli;
 
 namespace Chrono.Commands;
@@ -20,12 +21,8 @@ public class ShowCommand : AsyncCommand<ShowOptions>
     {
         switch (settings.Filter)
         {
-            case "projects":
-                PrintProjects();
-                break;
-            
             case "tasks":
-                PrintTasks();
+                await PrintTasksAsync();
                 break;
             
             default:
@@ -36,12 +33,9 @@ public class ShowCommand : AsyncCommand<ShowOptions>
         return 0;
     }
 
-    private void PrintProjects()
-    {
-        
-    }
+    
 
-    private void PrintTasks()
+    private async Task PrintTasksAsync()
     {
         
     }

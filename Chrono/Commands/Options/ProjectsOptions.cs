@@ -2,10 +2,10 @@ using Spectre.Console.Cli;
 
 namespace Chrono.Commands.Options;
 
-public class AddOptions : CommandSettings
+public class ProjectsOptions : CommandSettings
 {
-    [CommandArgument(0, "[Type]")]
-    public string Type { get; set; }
+    [CommandArgument(0, "[Action]")]
+    public string Action { get; set; }
     
     [CommandArgument(1, "[Name]")]
     public string Name { get; set; }
