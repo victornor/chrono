@@ -1,1 +1,2 @@
-# Chrono: C# CLI Timetracker for Developers
+# Chrono: CLI Timetracker
+Written in C# with focus on user experience.
